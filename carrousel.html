@@ -17,27 +17,76 @@
 	<body>
 		<h1>Carrousel</h1>
 
-		<!-- Content
+		<div>
+			<blockquote>
+				“Websites leren bouwen, én praktijkervaring opdoen?”
+			</blockquote>
+			
+			<blockquote>
+				“FDND is de enige HBO-opleiding voor Frontend Development in Nederland, in twee jaar stomen wij jou klaar voor het werkveld”
+			</blockquote>
 
-		“Websites leren bouwen, én praktijkervaring opdoen?”
+			<blockquote>
+				“Je werkt bij ons aan échte projecten voor échte opdrachtgevers”
+			</blockquote>
+		
+			<blockquote>
+				“In het studiomodel werken studenten onder begeleiding van coaches en experts uit het vakgebied aan praktijkgerichte opdrachten”
+			</blockquote>
 
-		“FDND is de enige HBO-opleiding voor Frontend Development in Nederland, in twee jaar stomen wij jou klaar voor het werkveld”
+			<blockquote>
+				“Bij FDND leer je websites bouwen en andere belangrijke skills die jij in de praktijk toe kan passen”
+			</blockquote>
 
-		“Je werkt bij ons aan échte projecten voor échte opdrachtgevers”
-
-		“In het studiomodel werken studenten onder begeleiding van coaches en experts uit het vakgebied aan praktijkgerichte opdrachten”
-
-		“Bij FDND leer je websites bouwen en andere belangrijke skills die jij in de praktijk toe kan passen”
-
-		“Een Associate degree-opleiding is een tweejarige hbo-opleiding op niveau 5”
-
-		-->
-
+			<blockquote>
+				“Een Associate degree-opleiding is een tweejarige hbo-opleiding op niveau 5”
+			</blockquote>
+		</div>
 		<details open>
 			<summary>Demo video</summary>
-			<video src="assets/carrousel.mp4" width="1298" height="469" controls muted autoplay loop>
+			<video src="assets/carrousel.mp4" width="1298" height="469" controls muted  >
 				<a href="assets/carrousel.mp4">assets/carrousel.mp4</a>
 			</video>
 		</details>
 	</body>
+
+
+
+
+	<style>
+		blockquote{
+			display: inline-block;
+
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+
+			font-style: italic;
+			font-weight: 700;
+			font-size: 2em;
+			margin: 0;
+			
+			height: 10em;
+			width: 30em;
+		}
+
+		blockquote:nth-child(3n+1){
+			background-color: var(--green);
+		}
+
+		blockquote:nth-child(3n+2){
+			background-color: var(--yellow);
+		}
+
+		blockquote:nth-child(3n){
+			background-color: var(--purple);
+		}
+
+		div{
+			display: flex;
+			flex-direction: row;
+			overflow-x: auto;
+			gap: 0;
+		}
+	</style>
 </html>
