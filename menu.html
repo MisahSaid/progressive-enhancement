@@ -21,7 +21,7 @@
 			<h1>Mobiel menu</h1>
 			
 				<!-- Dit is het menu -->
-		<h2><a href="">menu</a></h2>
+		<h2 id="menu"><a href="">menu</a></h2>
 
 		<nav>
 			<ul>
@@ -73,8 +73,8 @@
 
 
 <style>
-	nav{
-		display: ;
+	nav:target{
+		display: block;
 	}
 
 	h2 a{
@@ -99,6 +99,14 @@
 // Gebruik in JavaScript naam.classList.toggle() om een andere class aan een element toe te voegen.
 // ProTip: Gebruik bij elke stap console.log() om te controleren of alles werkt zoals je verwacht dat het werkt.
 
+
+let menu;
+
+menu = document.querySelector('#menu');
+
+menu.addEventListener('click', function(){
+	console.log('hallo wereld!');
+})
 
 </script>
 </html>
